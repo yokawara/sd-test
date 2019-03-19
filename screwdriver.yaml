@@ -1,0 +1,6 @@
+jobs:
+  main:
+    image: node:10
+    requires: [~pr, ~commit]
+    steps:
+      - echo: echo test
