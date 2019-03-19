@@ -1,8 +1,13 @@
+shared:
+  image: node:10
 annotations:
   screwdriver.cd/restrictPR: all
 jobs:
   main:
-    image: node:10
     requires: [~pr, ~commit]
     steps:
-      - echo: echo test
+      - echo: echo main
+  sub:
+    requires: [~pr, ~commit]
+    steps:
+      - echo: echo sub
