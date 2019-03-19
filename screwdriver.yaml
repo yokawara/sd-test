@@ -1,3 +1,5 @@
+annotations:
+  screwdriver.cd/restrictPR: all
 jobs:
   main:
     image: node:10
