@@ -1,2 +1,2 @@
 # sd-test
-screwdriver test
+screwdriver restrictPR test
