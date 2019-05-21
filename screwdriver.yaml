@@ -6,8 +6,7 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - echo: echo main
-  sub:
-    requires: [~pr, ~commit]
-    steps:
-      - echo: echo sub
+      - echo1: echo first
+      - echo2: echo second
+      - sleep: sleep 60
+      - echo3: echo third
