@@ -4,7 +4,8 @@ jobs:
   main:
     requires: [~pr, ~commit]
     steps:
-      - echo1: echo first
-      - echo2: echo second
-      - sleep: sleep 60
-      - echo3: echo third
+      - test: |
+          echo first;
+          echo second;
+          sleep 60;
+          echo third;
