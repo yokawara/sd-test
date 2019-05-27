@@ -8,3 +8,11 @@ jobs:
       - echo2: echo second
       - sleep: sleep 60
       - echo3: echo third
+  branch:
+    requires: [~pr:branch]
+    steps:
+      - echo: echo "triggered by ~pr:branch"
+  after-branch:
+    requires: [branch]
+    steps:
+      - echo: echo "triggered by branch job"
