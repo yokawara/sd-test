@@ -1,3 +1,7 @@
+childPipelines:
+  scmUrls:
+    - git@github.com:yokawara/sd-test-child-pipeline.git
+
 shared:
   image: node:10
 jobs:
