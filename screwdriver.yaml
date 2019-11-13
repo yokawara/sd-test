@@ -2,6 +2,9 @@ childPipelines:
   scmUrls:
     - git@github.com:yokawara/sd-test-child-pipeline.git#master
 
+parameters:
+  param: "sample-parameter"
+
 shared:
   image: node:10
 jobs:
