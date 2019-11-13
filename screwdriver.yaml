@@ -12,9 +12,7 @@ jobs:
     requires: [~pr, ~commit]
     steps:
       - echo1: echo first
-      - echo2: echo second
-      - sleep: sleep 60
-      - echo3: echo third
+      - parameter: echo `meta get parameters.param.value`
   branch:
     requires: [~pr:branch]
     steps:
